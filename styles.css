@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+
+/* Custom media query for iPad Mini (768px) */
+@media (max-width: 768px) {
+    #currentWeather, #extendedForecast {
+        font-size: 0.875rem; /* Adjust text size for smaller screens */
+    }
+
+    #forecastContainer {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for small screens */
+    }
+}
+
+/* Custom media query for iPhone SE (375px) */
+@media (max-width: 375px) {
+    #currentWeather, #extendedForecast {
+        font-size: 0.75rem; /* Further adjust text size for very small screens */
+    }
+
+    #forecastContainer {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+}
